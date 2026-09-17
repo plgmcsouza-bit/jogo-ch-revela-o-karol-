@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chá Revelação Karol 🩷💙</title>
+<style>
+:root{--cream:#f7f3ec;--paper:#fffdf9;--ink:#4e453d;--muted:#81766c;--line:#e7dfd5;--accent:#9b8874;--shadow:0 12px 35px rgba(80,65,50,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+button,input{font:inherit}.wrap{max-width:1050px;margin:auto;padding:22px 16px 50px}.hero{text-align:center;padding:30px 10px 24px}.kicker{font-size:13px;letter-spacing:4px;text-transform:uppercase;color:var(--muted)}h1{font-size:clamp(34px,7vw,66px);margin:8px 0 5px;font-weight:400}.subtitle{font-size:17px;color:var(--muted);margin:0 auto 20px;max-width:600px;line-height:1.55}.teddies{font-size:62px;letter-spacing:55px;margin:8px 0 15px}.intro{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow);max-width:700px;margin:auto}.intro b{font-size:18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:21px;text-align:center;box-shadow:var(--shadow);min-height:235px;display:flex;flex-direction:column;justify-content:space-between}.icon{font-size:38px}.card h2{font-size:19px;letter-spacing:2px;margin:8px 0}.card p{color:var(--muted);line-height:1.45;margin:0 0 14px}.btn{border:0;border-radius:14px;background:#e9e1d6;color:#51473e;padding:12px 18px;font-weight:700;cursor:pointer}.btn:active{transform:scale(.98)}.panel{display:none;margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.panel.show{display:block}.panel h3{text-align:center;font-size:25px;margin:0 0 8px}.panel .hint{text-align:center;color:var(--muted);margin:0 0 18px}.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}.opt{border:1px solid var(--line);background:#faf7f1;border-radius:15px;padding:14px;cursor:pointer}.opt:hover{background:#f1ebe2}.result{text-align:center;margin-top:16px;font-weight:700}.chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}.chip{border:1px solid var(--line);padding:10px 14px;border-radius:999px;background:#faf7f1;cursor:pointer}.selected{outline:2px solid #b4a391}.footer{text-align:center;color:var(--muted);margin-top:35px;line-height:1.6}.score{font-size:34px;text-align:center}.wordgrid{display:grid;grid-template-columns:repeat(8,1fr);gap:5px;max-width:380px;margin:15px auto}.letter{aspect-ratio:1;border:1px solid var(--line);border-radius:7px;background:#faf7f1;display:grid;place-items:center;font-weight:700;cursor:pointer}.revealBox{text-align:center;padding:30px 10px}.revealBox .big{font-size:72px}.revealBox .answer{font-size:38px;margin:8px 0;font-weight:700}.shake{animation:shake .45s}@keyframes shake{25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-4px)}}@media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.card{min-height:220px}}@media(max-width:480px){.grid{grid-template-columns:1fr}.teddies{letter-spacing:18px}.opts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="kicker">chá revelação</div>
+<div class="teddies">🧸 🧸</div>
+<h1>Karol 🩷💙</h1>
+<p class="subtitle">Menino ou menina? Antes da grande revelação, vamos brincar, dar palpites e descobrir quem conhece melhor a mamãe! ✨</p>
+<div class="intro"><b>São 9 brincadeiras!</b><br>Jogue quantas quiser e acompanhe sua pontuação. O resultado do bebê só aparece na revelação final.</div>
+</section>
+
+<section class="grid">
+<article class="card"><div><div class="icon">🔮</div><h2>PALPITES</h2><p>Registre seu chute para o grande momento.</p></div><button class="btn" onclick="openGame('palpite')">JOGAR</button></article>
+<article class="card"><div><div class="icon">🍼</div><h2>QUIZ DO BEBÊ</h2><p>Você sabe tudo sobre gravidez e bebês?</p></div><button class="btn" onclick="openGame('quiz')">JOGAR</button></article>
+<article class="card"><div><div class="icon">💭</div><h2>VERDADE OU MITO</h2><p>Descubra se as famosas simpatias fazem sentido.</p></div><button class="btn" onclick="openGame('mito')">JOGAR</button></article>
+<article class="card"><div><div class="icon">👕</div><h2>MONTE O LOOK</h2><p>Escolha uma combinação para o bebê.</p></div><button class="btn" onclick="openGame('look')">JOGAR</button></article>
+<article class="card"><div><div class="icon">🔎</div><h2>CAÇA-PALAVRAS</h2><p>Encontre 5 palavras escondidas.</p></div><button class="btn" onclick="openGame('palavras')">JOGAR</button></article>
+<article class="card"><div><div class="icon">🔤</div><h2>COMPLETE O NOME</h2><p>Escolha quais nomes você acha que a Karol escolheria.</p></div><button class="btn" onclick="openGame('nome')">JOGAR</button></article>
+<article class="card"><div><div class="icon">📅</div><h2>QUANDO CHEGA?</h2><p>Faça sua aposta para a data do nascimento.</p></div><button class="btn" onclick="openGame('data')">JOGAR</button></article>
+<article class="card"><div><div class="icon">🙋</div><h2>EU NUNCA</h2><p>Versão chá revelação para brincar em grupo.</p></div><button class="btn" onclick="openGame('nunca')">JOGAR</button></article>
+<article class="card"><div><div class="icon">🏆</div><h2>PLACAR</h2><p>Veja seus pontos e prepare-se para a revelação.</p></div><button class="btn" onclick="openGame('placar')">VER</button></article>
+</section>
+
+<section id="panel" class="panel"></section>
+
+<div style="text-align:center;margin-top:25px">
+<button class="btn" onclick="reveal()" style="padding:15px 25px">✨ REVELAÇÃO FINAL ✨</button>
+</div>
+
+<footer class="footer">Obrigada por fazer parte desse momento!<br><b>KAROL E SEU BEBÊ</b></footer>
+</main>
+
+<script>
+let points=0,guess=null;
+const panel=document.getElementById('panel');
+function openGame(type){
+panel.className='panel show';
+let h='';
+if(type==='palpite')h=`<h3>🔮 Qual é o seu palpite?</h3><p class="hint">Escolha sem medo. A resposta fica escondida até o final!</p><div class="opts"><button class="opt" onclick="pickGuess('MENINA',this)">MENINA</button><button class="opt" onclick="pickGuess('MENINO',this)">MENINO</button></div><div id="res" class="result"></div>`;
+if(type==='quiz')h=`<h3>🍼 Quiz do bebê</h3><p class="hint">3 perguntinhas rápidas.</p><div id="quiz"></div>`;
+if(type==='mito')h=`<h3>💭 Verdade ou mito?</h3><p class="hint">Adivinhe antes de revelar.</p><div class="opts"><button class="opt" onclick="truth(this,false)">“Formato da barriga revela o sexo.”</button><button class="opt" onclick="truth(this,true)">“O ultrassom pode ajudar a identificar o sexo.”</button></div><div id="res" class="result"></div>`;
+if(type==='look')h=`<h3>👕 Monte o look</h3><p class="hint">Escolha suas peças favoritas.</p><div class="chips"><span class="chip" onclick="sel(this)">👶 Body</span><span class="chip" onclick="sel(this)">🧦 Meias</span><span class="chip" onclick="sel(this)">🧸 Macacão</span><span class="chip" onclick="sel(this)">🧢 Touquinha</span><span class="chip" onclick="sel(this)">👟 Sapatinho</span></div><div id="res" class="result"></div>`;
+if(type==='palavras')h=`<h3>🔎 Caça-palavras</h3><p class="hint">Encontre: BEBÊ, AMOR, CAROL, FAMÍLIA e SONHO.</p><div id="wg" class="wordgrid"></div><div id="res" class="result">0 / 5 palavras encontradas</div>`;
+if(type==='nome')h=`<h3>🔤 Complete o nome</h3><p class="hint">Qual combinação você escolheria?</p><div class="opts"><button class="opt" onclick="namePick(this,'Ana')">Ana + um segundo nome</button><button class="opt" onclick="namePick(this,'Helena')">Helena + um segundo nome</button><button class="opt" onclick="namePick(this,'Alice')">Alice + um segundo nome</button><button class="opt" onclick="namePick(this,'Sofia')">Sofia + um segundo nome</button></div><div id="res" class="result"></div>`;
+if(type==='data')h=`<h3>📅 Quando chega?</h3><p class="hint">Escolha uma faixa para fazer sua aposta.</p><div class="chips"><span class="chip" onclick="dataPick(this,'Antes da data')">Antes da data</span><span class="chip" onclick="dataPick(this,'Na data')">Na data</span><span class="chip" onclick="dataPick(this,'Depois da data')">Depois da data</span></div><div id="res" class="result"></div>`;
+if(type==='nunca')h=`<h3>🙋 Eu nunca — versão maternidade</h3><p class="hint">Leia em voz alta e quem já fez levanta a mão!</p><div class="intro" style="margin:0">“Eu nunca comprei uma roupinha de bebê sem precisar.”<br><br>“Eu nunca dei palpite sobre o sexo do bebê.”<br><br>“Eu nunca chorei vendo um vídeo de bebê.”<br><br>“Eu nunca falei que sabia o sexo só pelo formato da barriga.”</div>`;
+if(type==='placar')h=`<h3>🏆 Seu placar</h3><div class="score">${points} pontos</div><p class="hint">Continue brincando e depois descubra o segredo!</p>`;
+panel.innerHTML=h; panel.scrollIntoView({behavior:'smooth',block:'center'});
+if(type==='quiz')buildQuiz();
+if(type==='palavras')buildWords();
+}
+function pickGuess(v,b){guess=v;document.querySelectorAll('.opt').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');document.getElementById('res').textContent='Palpite salvo! 🤫';}
+function truth(b,ok){b.classList.add('selected');document.getElementById('res').textContent=ok?'Acertou! +1 ponto':'Não foi dessa vez!';if(ok)points++}
+function sel(x){x.classList.toggle('selected');points++}
+function namePick(b,n){document.querySelectorAll('.opt').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');document.getElementById('res').textContent='Escolha registrada!'}
+function dataPick(b,v){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');document.getElementById('res').textContent='Aposta registrada!'}
+function buildQuiz(){const qs=[['Quantos meses, em geral, dura uma gestação?',['7','9','12'],1],['Qual exame acompanha o desenvolvimento do bebê?',['Ultrassom','Raio-X','Eletrocardiograma'],0],['O que é importante em uma alimentação na gestação?',['Variedade e acompanhamento','Só doces','Pular refeições'],0]];let i=0;const box=document.getElementById('quiz');function next(){if(i>=qs.length){box.innerHTML='<div class="result">Fim do quiz! 🎉</div>';return}let q=qs[i];box.innerHTML='<p><b>'+q[0]+'</b></p><div class="opts">'+q[1].map((a,j)=>`<button class="opt" onclick="quizAns(${j===q[2]})">${a}</button>`).join('')+'</div>'}window.quizAns=function(ok){if(ok)points++;i++;next()};next()}
+function buildWords(){const letters='BEBEAMORCAROLSONHOFAMILIA';const box=document.getElementById('wg');let found=new Set();for(let i=0;i<64;i++){let x=document.createElement('button');x.className='letter';x.textContent=letters[i%letters.length];x.onclick=()=>{if(!found.has(i)){found.add(i);x.classList.add('selected');if(found.size%12===0)points++;document.getElementById('res').textContent=Math.min(5,Math.floor(found.size/3))+' / 5 palavras encontradas'}};box.appendChild(x)}}
+function reveal(){
+panel.className='panel show';
+panel.innerHTML='<div class="revealBox"><div class="big">👶🏻✨</div><p>Respira... chegou a hora!</p><button class="btn" onclick="finalReveal()">ABRIR A REVELAÇÃO</button></div>';
+panel.scrollIntoView({behavior:'smooth',block:'center'});
+}
+function finalReveal(){
+panel.innerHTML='<div class="revealBox"><div class="big">🎀</div><div class="answer">É MENINA! 💗</div><p>Uma princesinha está a caminho! 👶🏻</p><p>Parabéns, Karol! ✨</p></div>';
+for(let i=0;i<45;i++){let s=document.createElement('span');s.textContent='✦';s.style.position='fixed';s.style.left=Math.random()*100+'vw';s.style.top='-20px';s.style.fontSize=(12+Math.random()*18)+'px';s.style.animation=`fall ${2+Math.random()*2}s linear forwards`;s.style.zIndex=10;document.body.appendChild(s);setTimeout(()=>s.remove(),4500)}
+}
+const st=document.createElement('style');st.textContent='@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}';document.head.appendChild(st);
+</script>
+</body>
+</html>
